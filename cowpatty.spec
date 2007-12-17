@@ -9,7 +9,6 @@ Release: %{release}
 Source: Cowpatty-%{version}.tar.bz2
 Group: Networking/Other
 URL: http://new.remote-exploit.org/index.php/Codes_main
-BuildRoot: %{_tmppath}/%{name}-buildroot
 BuildRequires: openssl-devel libpcap-devel
 License: GPL
 
