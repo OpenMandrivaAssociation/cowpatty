@@ -1,6 +1,6 @@
 %define name cowpatty
 %define version 2.0
-%define release %mkrel 5
+%define release %mkrel 6
 
 Name: %{name}
 Summary: Brute-force dictionary attack against WPA-PSK
@@ -9,7 +9,7 @@ Release: %{release}
 Source: Cowpatty-%{version}.tar.bz2
 Group: Networking/Other
 URL: http://new.remote-exploit.org/index.php/Codes_main
-BuildRoot: %{_tmppath}/%{name}-buildroot
+BuildRoot:	%{_tmppath}/%{name}-%{version}-%{release}-buildroot
 BuildRequires: openssl-devel libpcap-devel
 License: GPL
 
