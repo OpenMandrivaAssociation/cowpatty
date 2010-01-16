@@ -1,17 +1,17 @@
 %define name cowpatty
-%define version 2.0
-%define release %mkrel 7
+%define version 4.3
+%define release %mkrel 1
 
 Name: %{name}
 Summary: Brute-force dictionary attack against WPA-PSK
 Version: %{version}
 Release: %{release}
-Source: Cowpatty-%{version}.tar.bz2
+Source: %{name}-%{version}.tgz
 Group: Networking/Other
-URL: http://new.remote-exploit.org/index.php/Codes_main
+URL: http://cowpatty.sf.net
 BuildRoot:	%{_tmppath}/%{name}-%{version}-%{release}-buildroot
 BuildRequires: openssl-devel libpcap-devel
-License: GPL
+License: GPLv2
 
 %description
 coWPAtty is designed to audit the pre-shared key (PSK) selection for WPA
@@ -22,22 +22,22 @@ wordlist.
 See the README for more details.
 
 %prep
-%setup -q -n %name
+%setup -q 
 
 %build
 make
 make love
 
 %install
+rm -rf $RPM_BUILD_ROOT 
+# make install is broken
 mkdir -p $RPM_BUILD_ROOT/%{_bindir}
-cp cowpatty $RPM_BUILD_ROOT/%{_bindir}/
+cp cowpatty genpmk $RPM_BUILD_ROOT/%{_bindir}/
 
 %clean
 rm -rf $RPM_BUILD_ROOT 
 
 %files 
 %defattr(-,root,root)
-%doc AUTHORS CHANGELOG COPYING FAQ README TODO WISHLIST dict
+%doc AUTHORS CHANGELOG COPYING FAQ README TODO dict 
 %{_bindir}/*
-
-
