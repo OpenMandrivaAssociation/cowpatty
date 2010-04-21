@@ -1,6 +1,6 @@
 %define name cowpatty
 %define version 4.3
-%define release %mkrel 1
+%define release %mkrel 2
 
 Name: %{name}
 Summary: Brute-force dictionary attack against WPA-PSK
