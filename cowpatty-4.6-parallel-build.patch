@@ -1,0 +1,15 @@
+--- cowpatty-4.6/Makefile~	2009-06-05 18:07:08.000000000 +0000
++++ cowpatty-4.6/Makefile	2014-08-14 07:36:54.984697989 +0000
+@@ -20,10 +20,10 @@
+ all: $(PROGOBJ) $(PROG)
+ 
+ cowpatty: common.h md5.c md5.h sha1.h cowpatty.c cowpatty.h sha1.c \
+-            sha1.h utils.c utils.h
++            sha1.h utils.c utils.h $(PROGOBJ)
+ 	$(CC) $(CFLAGS) cowpatty.c -o cowpatty utils.o md5.o sha1.o $(LDLIBS)
+ 
+-genpmk: genpmk.c cowpatty.h utils.h sha1.h common.h
++genpmk: genpmk.c cowpatty.h utils.h sha1.h common.h utils.o sha1.o
+ 	$(CC) $(CFLAGS) genpmk.c -o genpmk utils.o sha1.o $(LDLIBS)
+ 
+ utils: utils.c utils.h

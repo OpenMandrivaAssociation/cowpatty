@@ -1,2 +1,4 @@
+removed_sources:
+  cowpatty-4.3.tgz: 8b7cb2015d0534031827f2f06135bf5cf5929d35
 sources:
-  "cowpatty-4.3.tgz": 8b7cb2015d0534031827f2f06135bf5cf5929d35
+  cowpatty-4.6.tgz: 2dc09d725e4131a68a33c8717d3a7317e5616df2
