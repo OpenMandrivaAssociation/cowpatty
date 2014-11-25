@@ -1,3 +1,5 @@
+%define debug_package %{nil}
+
 Name:		cowpatty
 Summary:	Brute-force dictionary attack against WPA-PSK
 Version:	4.6
