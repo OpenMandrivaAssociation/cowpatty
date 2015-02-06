@@ -3,7 +3,7 @@
 Name:		cowpatty
 Summary:	Brute-force dictionary attack against WPA-PSK
 Version:	4.6
-Release:	1
+Release:	2
 Source0:	http://wirelessdefence.org/Contents/Files/%{name}-%{version}.tgz
 Patch0:		cowpatty-4.6-parallel-build.patch
 Group:		Networking/Other
