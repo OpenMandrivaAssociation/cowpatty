@@ -7,7 +7,7 @@ Release:	2
 Source0:	http://wirelessdefence.org/Contents/Files/%{name}-%{version}.tgz
 Patch0:		cowpatty-4.6-parallel-build.patch
 Group:		Networking/Other
-URL:		http://cowpatty.sf.net
+URL:		https://cowpatty.sf.net
 BuildRequires:	openssl-devel
 BuildRequires:	libpcap-devel
 License:	GPLv2
